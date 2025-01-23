@@ -1,3 +1,11 @@
+This fork addresses Elixir compatibility issues specifically for use with [Antikythera](https://github.com/access-company/antikythera). This fork may not fix bugs except critical ones and won't improve code quality like `mix format` or `mix credo`.
+
+This fork uses version 0.4.1 as its base because version 0.4.2 has [compatibility issues](https://github.com/nurugger07/calliope/issues/79).
+
+Below is the original README.
+
+----
+
 ![Calliope](http://f.cl.ly/items/0T3a1a1w472z2o3p0d3O/6660441229_f6503a0dd2_b.jpg)
 
 # Calliope - An Elixir Haml Parser [![Build Status](https://travis-ci.org/nurugger07/calliope.png?branch=master)](https://travis-ci.org/nurugger07/calliope)
