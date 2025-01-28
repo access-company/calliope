@@ -3,7 +3,6 @@ defmodule Calliope.Parser do
   @tag      "%"
   @id       "#"
   @class    "."
-  @content  " "
   @tab      "\t"
   @doctype  "!"
   @attrs    "{"
