@@ -1,7 +1,7 @@
 defmodule CalliopeException do
   defexception [:message]
 
-  def messages do
+  def messages() do
     [
       too_deep_indent:        "Indentation was too deep on line number: #",
       unknown_filter:         "Unknown filter on line number: #",
@@ -19,8 +19,8 @@ defmodule CalliopeException do
     %CalliopeException{message: build_message(error, line, data)}
   end
 
-  defp build_message(error, line, data) do 
-    messages[error] 
+  defp build_message(error, line, data) do
+    messages()[error]
     |> String.replace(~r/##data##/, data)
     |> String.replace(~r/#/, "#{line}")
   end
