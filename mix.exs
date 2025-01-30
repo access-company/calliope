@@ -3,10 +3,6 @@ Code.ensure_loaded?(Hex) and Hex.start
 defmodule Calliope.Mixfile do
   use Mix.Project
 
-  def application do
-    [extra_applications: [:eex]]
-  end
-
   def project do
     [ app: :calliope,
       version: "0.4.1",
@@ -21,7 +17,8 @@ defmodule Calliope.Mixfile do
       ],
       description: """
       An Elixir library for parsing haml templates.
-      """
+      """,
+      xref: [exclude: [EEx]]
     ]
   end
 end
