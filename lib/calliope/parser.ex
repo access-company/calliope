@@ -160,7 +160,7 @@ defmodule Calliope.Parser do
   end
 
   defp head(str), do: String.first(str)
-  defp tail(str), do: String.slice(str, 1..-1)
+  defp tail(str), do: String.slice(str, 1..-1//1)
 
   defp validations([]), do: []
   defp validations([h|t]) do

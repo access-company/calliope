@@ -8,6 +8,7 @@ defmodule Calliope.Mixfile do
       version: "0.4.1",
       elixir: "~> 1.13",
       deps: [],
+      test_ignore_filters: [&String.starts_with?(&1, "test/support/")],
       package: [
         files: ["lib", "mix.exs", "README*", "LICENSE*"],
         contributors: ["Johnny Winn", "Stephen Pallen"],
