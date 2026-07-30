@@ -107,7 +107,6 @@ defmodule Calliope.Compiler do
   defp smart_children(children, si), do: "\n#{compile children, si}"
 
   defp smart_wraps_end(""), do: ""
-  defp smart_wraps_end(nil), do: ""
   defp smart_wraps_end(wraps_end), do: "\n#{wraps_end}"
 
   def precompile_content(nil), do: nil
